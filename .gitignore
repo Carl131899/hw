@@ -1,7 +1,10 @@
 # A .gitignore for Keil projects.
 # Taken mostly from http://www.keil.com/support/man/docs/uv4/uv4_b_filetypes.htm
 
-教材/
+#vscode configuration
+*.BROWSE.*
+
+
 # User-specific uVision files
 *.opt
 *.uvopt
@@ -68,6 +71,5 @@
 *.l2p
 *.iex
 *.bak
-*.xlsx
 
 # To explicitly override the above, define any exceptions here; e.g.:

@@ -73,3 +73,4 @@
 *.bak
 
 # To explicitly override the above, define any exceptions here; e.g.:
+.txt

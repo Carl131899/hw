@@ -28,6 +28,7 @@
    - [ ] 实现实验板上的蓝色LED 亮与灭的按键控制，其中按键1 按一下LED亮，按键2 按一下LED灭。
    - [ ] 要求基于 [ST 的 CubeMX](https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-configurators-and-code-generators/stm32cubemx.html) 分两步增量实现用户代码和生成代码，理解框架和配置代码的增量开发。
    - [ ] 使用 STLink 和 MDK 调试代码的基本技巧：单步、断点、变量观察等。
+   - [ ] 拓展：按键1 按一下 LED灯 0.5秒闪烁，每按一次闪烁时长增加 0.5秒。按键2 按一下，LED 闪烁时长恢复为 0.5秒。
 
 ## 四、课程重点内容
 

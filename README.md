@@ -29,13 +29,15 @@
    - [ ] 要求基于 [ST 的 CubeMX](https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-configurators-and-code-generators/stm32cubemx.html) 分两步增量实现用户代码和生成代码，理解框架和配置代码的增量开发。
    - [ ] 使用 STLink 和 MDK 调试代码的基本技巧：单步、断点、变量观察等。
    - [ ] 拓展：按键1 按一下 LED灯 0.5秒闪烁，每按一次闪烁时长增加 0.5秒。按键2 按一下，LED 闪烁时长恢复为 0.5秒。
+   - [ ] 拓展：使用实验板上的 PA11、PB12 设计和实现两个按键和两个 LED 灯的GPIO <u>复用功能</u>：按键1 控制 LED1 的亮与灭，按键2 控制 LED2 的亮与灭。
 
 2. 中断与时钟中断的应用
    - [ ] 中断系统：把上面的实验全部改为外部中断模式。
-   - [ ] 时钟设置：计时、计数、测量脉宽
-   - [ ] 时钟中断：8Khz
-   - [ ] 时钟中断驱动时间片的代码框架
-   - [ ] 使用小熊派 IoT实验套件和STM32CubeMX，基于定时器2，实现 20KHz 定时中断，由此20KHz生成 100Hz的 PWM周期信号，产生占空比慢慢增加和慢慢减小的PWM信号，获得 LED的呼吸灯效果（每分钟呼吸 10次）。用逻辑分析仪测量此信号的图形，自己编程用小熊派测量此信号的周期和高电平脉冲的周期变化。
+   - [ ] 用[逻辑分析仪](https://support.saleae.com/user-guide)验证 sysTick 的频率。
+   - [ ] 时钟设置：计时、计数、测量脉宽。
+   - [ ] 时钟中断：8Khz，驱动压电蜂鸣器发出滴滴声。
+   - [ ] 时钟中断驱动时间片的代码框架。
+   - [ ] 使用小熊派 IoT实验套件和STM32CubeMX，基于定时器2，实现 20KHz 定时中断，由此20KHz生成 100Hz的 PWM周期信号，产生占空比慢慢增加和慢慢减小的PWM信号，获得 LED的呼吸灯效果（每分钟呼吸 10次）。用[逻辑分析仪](https://support.saleae.com/user-guide)测量此信号的图形，自己编程用小熊派测量此信号的周期和高电平脉冲的周期变化。
 
 3. ARM 存储系统与嵌入式 C语言的应用
    - [ ] 根据 volatile 修饰符的特性，构造一个程序（主程序、中断子程序的程序结构）。要求：无 volatile 时，程序会出现随机的运行逻辑错误。加入 volatile 后，程序随机的运行逻辑错误消失。*拓展阅读：*[详解C/C++中volatile关键字](https://blog.csdn.net/weixin_44363885/article/details/92838607)
@@ -47,7 +49,7 @@
 
 1. 基于Git 分布式版本管理系统的协作能力。
 2. MarKDown 文档的写作能力，请阅读 [MarkDown 写作指南](https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/)。
-3. 形成自己的编程风格和规范，课程中会给出一种风格规范。
+3. 形成自己的编程风格和规范，课程中会给出一种风格规范，以提高代码的可阅读性、可复用性、可移植性、可靠性。
 4. 嵌入式 C 语言的开发特性，比如 volatile、const、interrupt 等几个关键词后面的理论含义。
 5. 嵌入式常规仪器（万用表，[逻辑分析仪](https://support.saleae.com/user-guide)，[示波器](https://www.tek.com.cn/oscilloscope/tbs1000b-edu-digital-storage-oscilloscope-manual/tbs1000b-and-tbs1000b-edu-series-oscil)等）的使用能力训练，嵌入式程序员易忽略此点。
 6. 产品创新和规划能力，培养工程师的商业敏锐度。
